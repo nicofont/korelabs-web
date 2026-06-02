@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KoreLabs — Apps Android para el día a día</title>
+  <meta name="description" content="KoreLabs crea apps Android simples y elegantes para productividad, finanzas y bienestar personal."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    /* Divider decorativo */
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+      margin: 0;
+    }
+    /* Stats */
+    .stats { display: flex; gap: 40px; flex-wrap: wrap; margin-top: 48px; }
+    .stat-item { text-align: left; }
+    .stat-num { font-size: 2.2rem; font-weight: 800; color: var(--gold); letter-spacing: -.03em; }
+    .stat-label { font-size: .85rem; color: var(--text-3); margin-top: 2px; }
+    /* Blob decorative */
+    .blob {
+      position: absolute; border-radius: 50%;
+      filter: blur(80px); pointer-events: none; opacity: .4;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Nav ─────────────────────────────────────────────────────────────── -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">
+      <div class="logo-mark">K</div>
+      KoreLabs
+    </div>
+    <div class="nav-links">
+      <a href="#nosotros">Nosotros</a>
+      <a href="#apps">Apps</a>
+      <a href="mailto:nico.fontana63@gmail.com">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Hero ────────────────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span>✦</span> Studio independiente de apps
+    </div>
+    <h1>Apps pensadas para <em>tu vida cotidiana</em></h1>
+    <p class="hero-sub">
+      Creamos herramientas Android simples, elegantes y sin distracciones
+      para que cada día sea un poco mejor.
+    </p>
+    <div class="hero-cta">
+      <a href="#apps" class="btn btn-primary">Ver nuestras apps</a>
+      <a href="mailto:nico.fontana63@gmail.com" class="btn btn-ghost">Contacto</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Nosotros ─────────────────────────────────────────────────────────── -->
+<section id="nosotros">
+  <div class="container">
+    <p class="section-label">Quiénes somos</p>
+    <h2>Un estudio pequeño con<br/>ideas claras</h2>
+    <p class="section-desc">
+      KoreLabs es un estudio independiente de desarrollo de apps Android.
+      Nos enfocamos en hacer pocas cosas, pero hacerlas muy bien: interfaces
+      limpias, sin cuentas obligatorias, sin datos en la nube que no sean
+      necesarios, y con tu privacidad siempre en primer lugar.
+    </p>
+
+    <div class="stats">
+      <div class="stat-item">
+        <div class="stat-num">5</div>
+        <div class="stat-label">Apps publicadas</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">3</div>
+        <div class="stat-label">Categorías</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Android nativo</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">0</div>
+        <div class="stat-label">Datos vendidos a terceros</div>
+      </div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="about-icon">🔒</div>
+        <h3>Privacidad por diseño</h3>
+        <p>Tus datos se quedan en tu celular. Sin cuentas obligatorias, sin sincronización innecesaria a la nube.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">⚡</div>
+        <h3>Rápidas y livianas</h3>
+        <p>Apps optimizadas que no consumen batería ni datos en segundo plano de forma innecesaria.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">🎨</div>
+        <h3>Diseño cuidado</h3>
+        <p>Interfaces oscuras y elegantes que son un placer de usar. Sin publicidad invasiva ni dark patterns.</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">🇦🇷</div>
+        <h3>Hecho en Argentina</h3>
+        <p>Desarrollado con cariño desde Buenos Aires, pensado para usuarios de habla hispana en todo el mundo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Apps ─────────────────────────────────────────────────────────────── -->
+<section id="apps">
+  <div class="container">
+    <div class="apps-header">
+      <p class="section-label">Nuestras apps</p>
+      <h2>Herramientas para cada parte de tu día</h2>
+      <p class="section-desc">
+        Tres pilares: que seas más productivo, que tu plata rinda más,
+        y que tu mente esté en paz.
+      </p>
+    </div>
+
+    <!-- Productividad -->
+    <div class="category">
+      <div class="category-label">
+        <h3>🎯 Productividad</h3>
+        <span class="category-pill">2 apps</span>
+      </div>
+      <div class="apps-grid">
+
+        <div class="app-card">
+          <div class="app-icon-wrap icon-pomodoro">⏱️</div>
+          <h3>Pomodoro</h3>
+          <p>Temporizador Pomodoro minimalista para mantener el foco. Intervalos de trabajo y descanso, notificaciones y sonidos configurables.</p>
+          <div class="app-footer">
+            <span class="app-pkg">com.korelabs.pomodoro</span>
+            <a href="privacy/pomodoro" class="app-link">Privacidad →</a>
+          </div>
+        </div>
+
+        <div class="app-card">
+          <div class="app-icon-wrap icon-habitos">✅</div>
+          <h3>Mis Hábitos</h3>
+          <p>Seguimiento de hábitos diarios con rachas, sistema de XP y estadísticas. Construí rutinas que duran con recordatorios inteligentes.</p>
+          <div class="app-footer">
+            <span class="app-pkg">com.korelabs.mishabitos</span>
+            <a href="privacy/habitos" class="app-link">Privacidad →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Finanzas -->
+    <div class="category">
+      <div class="category-label">
+        <h3>💼 Finanzas personales</h3>
+        <span class="category-pill">1 app</span>
+      </div>
+      <div class="apps-grid">
+
+        <div class="app-card">
+          <div class="app-icon-wrap icon-gastos">💰</div>
+          <h3>Mis Gastos</h3>
+          <p>Control de gastos e ingresos con categorías, presupuestos mensuales y gráficos. Toda tu info financiera en tu celular, sin servidores.</p>
+          <div class="app-footer">
+            <span class="app-pkg">com.korelabs.misgastos</span>
+            <a href="privacy/gastos" class="app-link">Privacidad →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bienestar -->
+    <div class="category">
+      <div class="category-label">
+        <h3>🌟 Bienestar y entretenimiento</h3>
+        <span class="category-pill">2 apps</span>
+      </div>
+      <div class="apps-grid">
+
+        <div class="app-card">
+          <div class="app-icon-wrap icon-frases">✨</div>
+          <h3>Frase del Día</h3>
+          <p>Una frase motivacional nueva cada día en 7 categorías, más tu horóscopo diario personalizado. Widget para la pantalla de inicio incluido.</p>
+          <div class="app-footer">
+            <span class="app-pkg">com.korelabs.frases</span>
+            <a href="privacy/frases" class="app-link">Privacidad →</a>
+          </div>
+        </div>
+
+        <div class="app-card">
+          <div class="app-icon-wrap icon-cuentos">🌙</div>
+          <h3>Cuentos Mágicos</h3>
+          <p>Cuentos para dormir personalizados con el nombre de tu hijo/a. Elegí el protagonista, tipo de historia y valores que querés transmitir.</p>
+          <div class="app-footer">
+            <span class="app-pkg">com.korelabs.miscuentos</span>
+            <a href="privacy/cuentos" class="app-link">Privacidad →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── Footer ───────────────────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">KoreLabs</div>
+      <div class="footer-copy" style="margin-top:4px">© 2025 KoreLabs. Todos los derechos reservados.</div>
+    </div>
+    <div class="footer-links">
+      <a href="privacy/pomodoro">Pomodoro — Privacidad</a>
+      <a href="privacy/habitos">Mis Hábitos — Privacidad</a>
+      <a href="privacy/gastos">Mis Gastos — Privacidad</a>
+      <a href="privacy/frases">Frase del Día — Privacidad</a>
+      <a href="privacy/cuentos">Cuentos Mágicos — Privacidad</a>
+      <a href="mailto:nico.fontana63@gmail.com">Contacto</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
