@@ -263,6 +263,7 @@ h2 {
 .icon-gastos    { background: linear-gradient(135deg,#003a3d,#001a1a); }
 .icon-frases    { background: linear-gradient(135deg,#2d1a3d,#120a1a); }
 .icon-cuentos   { background: linear-gradient(135deg,#001a3d,#000a1a); }
+.icon-autotrack { background: linear-gradient(135deg,#1a2d3d,#0a141a); }
 
 /* ── Privacy Page ─────────────────────────────────────────────────────────── */
 .privacy-hero {
