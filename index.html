@@ -1,293 +1,271 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>KoreLabs — Apps Android para el día a día</title>
-  <meta name="description" content="KoreLabs crea apps Android simples y elegantes para productividad, finanzas y bienestar personal."/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="styles.css"/>
-  <style>
-    /* Divider decorativo */
-    .divider {
-      height: 1px;
-      background: linear-gradient(90deg, transparent, var(--border), transparent);
-      margin: 0;
-    }
-    /* Stats */
-    .stats { display: flex; gap: 40px; flex-wrap: wrap; margin-top: 48px; }
-    .stat-item { text-align: left; }
-    .stat-num { font-size: 2.2rem; font-weight: 800; color: var(--gold); letter-spacing: -.03em; }
-    .stat-label { font-size: .85rem; color: var(--text-3); margin-top: 2px; }
-    /* Blob decorative */
-    .blob {
-      position: absolute; border-radius: 50%;
-      filter: blur(80px); pointer-events: none; opacity: .4;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KoreLabs — Apps chicas para el día a día</title>
+  <meta name="description" content="KoreLabs hace apps Android simples y honestas: un temporizador Pomodoro, un seguimiento de hábitos y un rompecabezas para pausas cortas. Sin registro, sin vueltas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-<!-- ── Nav ─────────────────────────────────────────────────────────────── -->
-<nav>
-  <div class="nav-inner">
-    <div class="nav-logo">
-      <div class="logo-mark">K</div>
-      KoreLabs
+  <nav class="nav">
+    <div class="wrap">
+      <a href="index.html" class="wordmark">Kore<span>Labs</span></a>
+      <div class="nav-links">
+        <a href="#apps">Apps</a>
+        <a href="#nosotras">Quiénes somos</a>
+        <a href="apps/pomodoro.html" class="nav-cta">Ver apps</a>
+      </div>
     </div>
-    <div class="nav-links">
-      <a href="#nosotros">Nosotros</a>
-      <a href="#apps">Apps</a>
-      <a href="mailto:contactos@korelabs.com.ar">Contacto</a>
-    </div>
-  </div>
-</nav>
+  </nav>
 
-<!-- ── Hero ────────────────────────────────────────────────────────────── -->
-<section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-content">
-    <div class="hero-badge">
-      <span>✦</span> Studio independiente de apps
-    </div>
-    <h1>Apps pensadas para <em>tu vida cotidiana</em></h1>
-    <p class="hero-sub">
-      Creamos herramientas Android simples, elegantes y sin distracciones
-      para que cada día sea un poco mejor.
-    </p>
-    <div class="hero-cta">
-      <a href="#apps" class="btn btn-primary">Ver nuestras apps</a>
-      <a href="mailto:contactos@korelabs.com.ar" class="btn btn-ghost">Contacto</a>
-    </div>
-  </div>
-</section>
-
-<!-- ── Nosotros ─────────────────────────────────────────────────────────── -->
-<section id="nosotros">
-  <div class="container">
-    <p class="section-label">Quiénes somos</p>
-    <h2>Un estudio pequeño con<br/>ideas claras</h2>
-    <p class="section-desc">
-      KoreLabs es un estudio independiente de desarrollo de apps Android.
-      Nos enfocamos en hacer pocas cosas, pero hacerlas muy bien: interfaces
-      limpias, sin cuentas obligatorias, sin datos en la nube que no sean
-      necesarios, y con tu privacidad siempre en primer lugar.
-    </p>
-
-    <div class="stats">
-      <div class="stat-item">
-        <div class="stat-num">3</div>
-        <div class="stat-label">Apps publicadas</div>
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="pkg">com.korelabs.suite</div>
+        <h1>Apps chicas,<br><em>pensadas para hoy.</em></h1>
+        <p class="lede">Nada de cuentas, nada de configuraciones eternas. Herramientas simples para enfocarte, sostener un hábito o desconectar diez minutos — hechas en Argentina.</p>
+        <div class="hero-actions">
+          <a href="#apps" class="btn btn-primary">Ver las apps</a>
+          <a href="#nosotras" class="btn btn-ghost">Quiénes somos</a>
+        </div>
       </div>
-      <div class="stat-item">
-        <div class="stat-num">2</div>
-        <div class="stat-label">Categorías</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">100%</div>
-        <div class="stat-label">Android nativo</div>
-      </div>
-      <div class="stat-item">
-        <div class="stat-num">0</div>
-        <div class="stat-label">Datos vendidos a terceros</div>
+      <div class="ring-wrap reveal">
+        <div class="ring">
+          <div class="ring-inner">
+            <strong>Un ciclo<br>a la vez</strong>
+            <span>enfoque · hábito · pausa</span>
+          </div>
+        </div>
       </div>
     </div>
+  </header>
 
-    <div class="about-grid">
-      <div class="about-card">
-        <div class="about-icon">🔒</div>
-        <h3>Privacidad por diseño</h3>
-        <p>Tus datos se quedan en tu celular. Sin cuentas obligatorias, sin sincronización innecesaria a la nube.</p>
-      </div>
-      <div class="about-card">
-        <div class="about-icon">⚡</div>
-        <h3>Rápidas y livianas</h3>
-        <p>Apps optimizadas que no consumen batería ni datos en segundo plano de forma innecesaria.</p>
-      </div>
-      <div class="about-card">
-        <div class="about-icon">🎨</div>
-        <h3>Diseño cuidado</h3>
-        <p>Interfaces oscuras y elegantes que son un placer de usar. Sin publicidad invasiva ni dark patterns.</p>
-      </div>
-      <div class="about-card">
-        <div class="about-icon">🇦🇷</div>
-        <h3>Hecho en Argentina</h3>
-        <p>Desarrollado con cariño desde Buenos Aires, pensado para usuarios de habla hispana en todo el mundo.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ── Apps ─────────────────────────────────────────────────────────────── -->
-<section id="apps">
-  <div class="container">
-    <div class="apps-header">
-      <p class="section-label">Nuestras apps</p>
-      <h2>Herramientas para cada parte de tu día</h2>
-      <p class="section-desc">
-        Herramientas simples para ser más productivo cada día.
-      </p>
-    </div>
-
-    <!-- Productividad -->
-    <div class="category">
-      <div class="category-label">
-        <h3>🎯 Productividad</h3>
-        <span class="category-pill">2 apps</span>
+  <section id="apps">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="pkg">01 — nuestras apps</div>
+        <h2>Tres formas distintas de ordenar el día</h2>
+        <p>Cada una resuelve una sola cosa, bien. Ninguna te pide iniciar sesión.</p>
       </div>
 
       <div class="apps-grid">
 
-        <div class="app-card">
-          <div class="app-icon-wrap icon-pomodoro">⏱️</div>
-          <h3>Pomodoro</h3>
-          <p>Temporizador Pomodoro minimalista para mantener el foco. Intervalos de trabajo y descanso, notificaciones y sonidos configurables.</p>
-          <div class="app-footer">
-            <span class="app-pkg">com.korelabs.pomodoro</span>
-            <a href="privacy/pomodoro" class="app-link">Privacidad →</a>
+        <a href="apps/pomodoro.html" class="app-card pomodoro-card reveal">
+          <div class="mini-preview">
+            <div class="ui-pomodoro-ring"><div><strong>18:24</strong><span>Enfocado</span></div></div>
           </div>
-        </div>
-
-        <div class="app-card">
-          <div class="app-icon-wrap icon-habitos">✅</div>
-          <h3>Mis Hábitos</h3>
-          <p>Seguimiento de hábitos diarios con rachas, sistema de XP y estadísticas. Construí rutinas que duran con recordatorios inteligentes.</p>
-          <div class="app-footer">
-            <span class="app-pkg">com.korelabs.mishabitos</span>
-            <a href="privacy/habitos" class="app-link">Privacidad →</a>
+          <div>
+            <div class="cat">Productividad</div>
+            <h3>Pomodoro</h3>
+            <p>Ciclos de foco y descanso, sin fricción. Solo apretás play.</p>
           </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="category">
-      <div class="category-label">
-        <h3>🎮 Juegos</h3>
-        <span class="category-pill">1 app</span>
-      </div>
-      <div class="apps-grid">
-
-        <div class="app-card">
-          <div class="app-icon-wrap icon-lightsout">💡</div>
-          <h3>Lights Out</h3>
-          <p>Clásico puzzle de luces: apagá todas las celdas del tablero tocando celdas que cambian a sus vecinos. Tres niveles de dificultad con récords.</p>
-          <div class="app-footer">
-            <span class="app-pkg">com.korelabs.lightsout</span>
-            <a href="privacy/lightsout" class="app-link">Privacidad →</a>
+          <div class="app-card-foot">
+            <span class="pkg">com.korelabs.pomodoro</span>
+            <span class="app-card-link">Ver app →</span>
           </div>
-        </div>
+        </a>
+
+        <a href="apps/mis-habitos.html" class="app-card habitos-card reveal">
+          <div class="mini-preview">
+            <div class="ui-habitos">
+              <div class="ui-habit-row done"><div class="ui-habit-dot"></div><div class="ui-habit-bar"><div style="width:100%"></div></div></div>
+              <div class="ui-habit-row done"><div class="ui-habit-dot"></div><div class="ui-habit-bar"><div style="width:100%"></div></div></div>
+              <div class="ui-habit-row"><div class="ui-habit-dot"></div><div class="ui-habit-bar"><div style="width:35%"></div></div></div>
+            </div>
+          </div>
+          <div>
+            <div class="cat">Productividad</div>
+            <h3>Mis Hábitos</h3>
+            <p>Marcá el día, sostené la racha. Constancia visible, sin culpa.</p>
+          </div>
+          <div class="app-card-foot">
+            <span class="pkg">com.korelabs.mishabitos</span>
+            <span class="app-card-link">Ver app →</span>
+          </div>
+        </a>
+
+        <a href="apps/lights-out.html" class="app-card lightsout-card reveal">
+          <div class="mini-preview">
+            <div class="ui-lightsout">
+              <div class="on"></div><div></div><div class="on"></div><div></div>
+              <div></div><div class="on"></div><div class="on"></div><div></div>
+              <div class="on"></div><div></div><div></div><div class="on"></div>
+              <div></div><div class="on"></div><div></div><div></div>
+            </div>
+          </div>
+          <div>
+            <div class="cat">Juegos · Rompecabezas</div>
+            <h3>Lights Out</h3>
+            <p>Apagá todas las luces del tablero. Fácil de entender, difícil de soltar.</p>
+          </div>
+          <div class="app-card-foot">
+            <span class="pkg">com.korelabs.lightsout</span>
+            <span class="app-card-link">Ver app →</span>
+          </div>
+        </a>
 
       </div>
-    </div>
 
-    <!--
-    ══════════════════════════════════════════════════════════════
-    APPS NO PUBLICADAS AÚN — descomentar cuando estén en Play Store
-    ══════════════════════════════════════════════════════════════
+      <!--
+      ══════════════════════════════════════════════════════════════
+      APPS NO PUBLICADAS AÚN — descomentar y armar su página de
+      detalle en apps/ cuando estén en Play Store (mismo criterio
+      que se usaba en el index.html anterior).
+      ══════════════════════════════════════════════════════════════
 
-    <div class="category">
-      <div class="category-label">
-        <h3>💼 Finanzas personales</h3>
-        <span class="category-pill">1 app</span>
-      </div>
-      <div class="apps-grid">
-
-        <div class="app-card">
-          <div class="app-icon-wrap icon-gastos">💰</div>
+      <div class="app-card reveal">
+        <div class="mini-preview">💰</div>
+        <div>
+          <div class="cat">Finanzas personales</div>
           <h3>Mis Gastos</h3>
-          <p>Control de gastos e ingresos con categorías, presupuestos mensuales y gráficos. Toda tu info financiera en tu celular, sin servidores.</p>
-          <div class="app-footer">
-            <span class="app-pkg">com.korelabs.misgastos</span>
-            <a href="privacy/gastos" class="app-link">Privacidad →</a>
-          </div>
+          <p>Control de gastos e ingresos con categorías, presupuestos mensuales y gráficos.</p>
         </div>
-
+        <div class="app-card-foot">
+          <span class="pkg">com.korelabs.misgastos</span>
+          <span class="app-card-link">Ver app →</span>
+        </div>
       </div>
-    </div>
 
-    <div class="category">
-      <div class="category-label">
-        <h3>🌟 Bienestar y entretenimiento</h3>
-        <span class="category-pill">4 apps</span>
-      </div>
-      <div class="apps-grid">
-
-        <div class="app-card">
-          <div class="app-icon-wrap icon-frases">✨</div>
+      <div class="app-card reveal">
+        <div class="mini-preview">✨</div>
+        <div>
+          <div class="cat">Bienestar y entretenimiento</div>
           <h3>Frase del Día</h3>
-          <p>Una frase motivacional nueva cada día en 7 categorías, más tu horóscopo diario personalizado. Widget para la pantalla de inicio incluido.</p>
-          <div class="app-footer">
-            <span class="app-pkg">com.korelabs.frases</span>
-            <a href="privacy/frases" class="app-link">Privacidad →</a>
-          </div>
+          <p>Una frase motivacional nueva cada día, más tu horóscopo diario personalizado.</p>
         </div>
+        <div class="app-card-foot">
+          <span class="pkg">com.korelabs.frases</span>
+          <span class="app-card-link">Ver app →</span>
+        </div>
+      </div>
 
-        <div class="app-card">
-          <div class="app-icon-wrap icon-cuentos">🌙</div>
+      <div class="app-card reveal">
+        <div class="mini-preview">🌙</div>
+        <div>
+          <div class="cat">Bienestar y entretenimiento</div>
           <h3>Cuentos Mágicos</h3>
-          <p>Cuentos para dormir personalizados con el nombre de tu hijo/a. Elegí el protagonista, tipo de historia y valores que querés transmitir.</p>
-          <div class="app-footer">
-            <span class="app-pkg">com.korelabs.miscuentos</span>
-            <a href="privacy/cuentos" class="app-link">Privacidad →</a>
-          </div>
+          <p>Cuentos para dormir personalizados con el nombre de tu hijo/a.</p>
         </div>
+        <div class="app-card-foot">
+          <span class="pkg">com.korelabs.miscuentos</span>
+          <span class="app-card-link">Ver app →</span>
+        </div>
+      </div>
 
-        <div class="app-card">
-          <div class="app-icon-wrap icon-pictovoz">🗣️</div>
+      <div class="app-card reveal">
+        <div class="mini-preview">🗣️</div>
+        <div>
+          <div class="cat">Accesibilidad</div>
           <h3>PictoVoz</h3>
-          <p>Herramienta de comunicación aumentativa y alternativa con pictogramas y síntesis de voz. Ideal para personas con necesidades de comunicación especiales.</p>
-          <div class="app-footer">
-            <span class="app-pkg">com.korelabs.pictovoz</span>
-            <a href="privacy/pictovoz" class="app-link">Privacidad →</a>
-          </div>
+          <p>Comunicación aumentativa y alternativa con pictogramas y síntesis de voz.</p>
         </div>
+        <div class="app-card-foot">
+          <span class="pkg">com.korelabs.pictovoz</span>
+          <span class="app-card-link">Ver app →</span>
+        </div>
+      </div>
 
-        <div class="app-card">
-          <div class="app-icon-wrap icon-escanerqr">📷</div>
+      <div class="app-card reveal">
+        <div class="mini-preview">📷</div>
+        <div>
+          <div class="cat">Utilidades</div>
           <h3>Escáner QR</h3>
-          <p>Escáner y generador de códigos QR. Detecta URLs, WiFi, contactos y más. Historial de escaneos y generación en todos los formatos.</p>
-          <div class="app-footer">
-            <span class="app-pkg">com.korelabs.escanerqr</span>
-            <a href="privacy/escanerqr" class="app-link">Privacidad →</a>
+          <p>Escáner y generador de códigos QR. Detecta URLs, WiFi, contactos y más.</p>
+        </div>
+        <div class="app-card-foot">
+          <span class="pkg">com.korelabs.escanerqr</span>
+          <span class="app-card-link">Ver app →</span>
+        </div>
+      </div>
+
+      <div class="app-card reveal">
+        <div class="mini-preview">🚗</div>
+        <div>
+          <div class="cat">Utilidades</div>
+          <h3>AutoTrack</h3>
+          <p>Gestión de mantenimiento, combustible y recordatorios de tu vehículo.</p>
+        </div>
+        <div class="app-card-foot">
+          <span class="pkg">com.korelabs.autotrack</span>
+          <span class="app-card-link">Ver app →</span>
+        </div>
+      </div>
+
+      ══════════════════════════════════════════════════════════════
+      FIN APPS NO PUBLICADAS
+      ══════════════════════════════════════════════════════════════
+      -->
+
+    </div>
+  </section>
+
+  <section class="about-strip" id="nosotras">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="big">Somos un estudio chico armando apps Android honestas — sin publicidad invasiva, sin datos que no necesitamos, sin funciones que no vas a usar.</p>
+        <div class="stat-row">
+          <div class="stat"><strong>3</strong><span>apps publicadas</span></div>
+          <div class="stat"><strong>2</strong><span>categorías</span></div>
+          <div class="stat"><strong>AR</strong><span>hecho en Argentina</span></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="features-grid" style="grid-template-columns:1fr;">
+          <div class="feature">
+            <div class="feature-num">01</div>
+            <div><h4>Sin registro</h4><p>Abrís la app y la usás. No pedimos email ni cuenta para las funciones básicas.</p></div>
+          </div>
+          <div class="feature">
+            <div class="feature-num">02</div>
+            <div><h4>Livianas</h4><p>Pocos MB, arrancan rápido, no te comen batería en segundo plano.</p></div>
+          </div>
+          <div class="feature">
+            <div class="feature-num">03</div>
+            <div><h4>En español</h4><p>Pensadas y escritas en español primero, con inglés disponible.</p></div>
           </div>
         </div>
-
       </div>
     </div>
+  </section>
 
-    ══════════════════════════════════════════════════════════════
-    FIN APPS NO PUBLICADAS
-    ══════════════════════════════════════════════════════════════
-    -->
-
-  </div>
-</section>
-
-<!-- ── Footer ───────────────────────────────────────────────────────────── -->
-<footer>
-  <div class="footer-inner">
-    <div>
-      <div class="footer-brand">KoreLabs</div>
-      <div class="footer-copy" style="margin-top:4px">© 2025 KoreLabs. Todos los derechos reservados.</div>
+  <footer>
+    <div class="wrap">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="wordmark">Kore<span>Labs</span></a>
+          <p style="color:var(--text-muted); font-size:0.9rem; margin-top:12px; max-width:280px;">Apps chicas para el día a día. Hechas en Argentina.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h5>Apps</h5>
+            <a href="apps/pomodoro.html">Pomodoro</a>
+            <a href="apps/mis-habitos.html">Mis Hábitos</a>
+            <a href="apps/lights-out.html">Lights Out</a>
+          </div>
+          <div class="footer-col">
+            <h5>Legal</h5>
+            <a href="/privacy/pomodoro/">Privacidad — Pomodoro</a>
+            <a href="/privacy/habitos/">Privacidad — Mis Hábitos</a>
+            <a href="/privacy/lightsout/">Privacidad — Lights Out</a>
+          </div>
+          <div class="footer-col">
+            <h5>Contacto</h5>
+            <a href="mailto:contactos@korelabs.com.ar">contactos@korelabs.com.ar</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year></span> KoreLabs. Todos los derechos reservados.</span>
+        <span>korelabs.com.ar</span>
+      </div>
     </div>
-    <div class="footer-links">
-      <a href="privacy/pomodoro">Pomodoro — Privacidad</a>
-      <a href="privacy/habitos">Mis Hábitos — Privacidad</a>
-      <a href="privacy/lightsout">Lights Out — Privacidad</a>
-      <!-- Apps no publicadas aún — descomentar cuando estén en Play Store
-      <a href="privacy/gastos">Mis Gastos — Privacidad</a>
-      <a href="privacy/frases">Frase del Día — Privacidad</a>
-      <a href="privacy/cuentos">Cuentos Mágicos — Privacidad</a>
-      <a href="privacy/pictovoz">PictoVoz — Privacidad</a>
-      <a href="privacy/escanerqr">Escáner QR — Privacidad</a>
-      -->
-      <a href="mailto:contactos@korelabs.com.ar">Contacto</a>
-    </div>
-  </div>
-</footer>
+  </footer>
 
+  <script src="assets/main.js"></script>
 </body>
 </html>
