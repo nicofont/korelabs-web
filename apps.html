@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuestras apps — KoreLabs</title>
+  <meta name="description" content="Catálogo de apps Android de KoreLabs, organizado por categoría: productividad y juegos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="wrap">
+      <a href="index.html" class="wordmark">Kore<span>Labs</span></a>
+      <div class="nav-links">
+        <a href="index.html#nosotras">Quiénes somos</a>
+        <a href="index.html#a-medida">A medida</a>
+        <a href="index.html#contacto">Contacto</a>
+        <a href="descargar.html" class="nav-cta">Descargar</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero" style="padding-bottom:20px;">
+    <div class="wrap" style="max-width:640px;">
+      <a href="index.html" class="back-link" style="margin-bottom:22px;">← Volver a KoreLabs</a>
+      <div class="pkg">com.korelabs.suite</div>
+      <h1 style="font-size:clamp(2.2rem, 4.6vw, 3.2rem);">Nuestras apps</h1>
+      <p class="lede">Todo lo que publicamos, agrupado por categoría. Cada una resuelve una sola cosa, bien — ninguna te pide iniciar sesión.</p>
+    </div>
+  </header>
+
+  <section style="padding-top:20px;">
+    <div class="wrap">
+
+      <div class="category-block reveal">
+        <div class="category-label">Productividad <span class="count">2 apps</span></div>
+        <div class="apps-grid">
+
+          <a href="apps/pomodoro.html" class="app-card pomodoro-card">
+            <div class="mini-preview">
+              <!-- TODO: reemplazar por screenshot real cuando esté disponible; mientras tanto, mockup CSS con los colores reales de la app. -->
+              <div class="ui-pomodoro-ring"><div><strong>18:24</strong><span>Enfocado</span></div></div>
+            </div>
+            <div>
+              <div class="cat">Productividad</div>
+              <h3>Pomodoro</h3>
+              <p>Ciclos de foco y descanso, sin fricción. Solo apretás play.</p>
+            </div>
+            <div class="app-card-foot">
+              <span class="pkg">com.korelabs.pomodoro</span>
+              <span class="app-card-link">Ver app →</span>
+            </div>
+          </a>
+
+          <a href="apps/mis-habitos.html" class="app-card habitos-card">
+            <div class="mini-preview">
+              <!-- TODO: reemplazar por screenshot real cuando esté disponible; mientras tanto, mockup CSS con los colores reales de la app. -->
+              <div class="ui-habitos">
+                <div class="ui-habit-row done"><div class="ui-habit-dot"></div><div class="ui-habit-bar"><div style="width:100%"></div></div></div>
+                <div class="ui-habit-row done"><div class="ui-habit-dot"></div><div class="ui-habit-bar"><div style="width:100%"></div></div></div>
+                <div class="ui-habit-row"><div class="ui-habit-dot"></div><div class="ui-habit-bar"><div style="width:35%"></div></div></div>
+              </div>
+            </div>
+            <div>
+              <div class="cat">Productividad</div>
+              <h3>Mis Hábitos</h3>
+              <p>Marcá el día, sostené la racha. Constancia visible, sin culpa.</p>
+            </div>
+            <div class="app-card-foot">
+              <span class="pkg">com.korelabs.mishabitos</span>
+              <span class="app-card-link">Ver app →</span>
+            </div>
+          </a>
+
+          <!-- Nueva app de productividad: copiar una de las cards de arriba y completar. -->
+
+        </div>
+      </div>
+
+      <div class="category-block reveal">
+        <div class="category-label">Juegos <span class="count">1 app</span></div>
+        <div class="apps-grid">
+
+          <a href="apps/lights-out.html" class="app-card lightsout-card">
+            <div class="mini-preview">
+              <!-- TODO: reemplazar por screenshot real cuando esté disponible; mientras tanto, mockup CSS con los colores reales de la app. -->
+              <div class="ui-lightsout">
+                <div class="on"></div><div></div><div class="on"></div><div></div>
+                <div></div><div class="on"></div><div class="on"></div><div></div>
+                <div class="on"></div><div></div><div></div><div class="on"></div>
+                <div></div><div class="on"></div><div></div><div></div>
+              </div>
+            </div>
+            <div>
+              <div class="cat">Juegos · Rompecabezas</div>
+              <h3>Lights Out</h3>
+              <p>Apagá todas las luces del tablero. Fácil de entender, difícil de soltar.</p>
+            </div>
+            <div class="app-card-foot">
+              <span class="pkg">com.korelabs.lightsout</span>
+              <span class="app-card-link">Ver app →</span>
+            </div>
+          </a>
+
+          <!-- Nueva app de juegos: copiar la card de arriba y completar. -->
+
+        </div>
+      </div>
+
+      <!--
+      ══════════════════════════════════════════════════════════════
+      OTRAS CATEGORÍAS — agregar un .category-block nuevo cuando se
+      publique la primera app de esa categoría. Ejemplo con las apps
+      ya construidas pero sin publicar todavía (ver KORELABS_OVERVIEW.md
+      en el repo korelabs para el estado real de cada una):
+
+      <div class="category-block reveal">
+        <div class="category-label">Finanzas personales <span class="count">1 app</span></div>
+        <div class="apps-grid">
+          <a href="apps/mis-gastos.html" class="app-card">
+            <div class="mini-preview">💰</div>
+            <div>
+              <div class="cat">Finanzas personales</div>
+              <h3>Mis Gastos</h3>
+              <p>Control de gastos e ingresos con categorías, presupuestos mensuales y gráficos.</p>
+            </div>
+            <div class="app-card-foot">
+              <span class="pkg">com.korelabs.misgastos</span>
+              <span class="app-card-link">Ver app →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      ══════════════════════════════════════════════════════════════
+      -->
+
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="wrap" style="text-align:center;">
+      <p style="color:var(--text-muted); margin-bottom:20px;">¿Solo querés bajarlas rápido?</p>
+      <a href="descargar.html" class="btn btn-primary">Ir directo a descargar</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="wordmark">Kore<span>Labs</span></a>
+          <p style="color:var(--text-muted); font-size:0.9rem; margin-top:12px; max-width:280px;">Estudio de apps Android. Hecho en Argentina.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h5>Explorar</h5>
+            <a href="apps.html">Nuestras apps</a>
+            <a href="descargar.html">Descargar</a>
+            <a href="index.html#a-medida">Apps a medida</a>
+          </div>
+          <div class="footer-col">
+            <h5>Legal</h5>
+            <a href="/privacy/pomodoro/">Privacidad — Pomodoro</a>
+            <a href="/privacy/habitos/">Privacidad — Mis Hábitos</a>
+            <a href="/privacy/lightsout/">Privacidad — Lights Out</a>
+          </div>
+          <div class="footer-col">
+            <h5>Contacto</h5>
+            <a href="mailto:contactos@korelabs.com.ar">contactos@korelabs.com.ar</a>
+            <a href="https://instagram.com/korelabs.app" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year></span> KoreLabs. Todos los derechos reservados.</span>
+        <span>korelabs.com.ar</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

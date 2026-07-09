@@ -227,7 +227,7 @@ h2 { font-size: clamp(1.8rem, 3.2vw, 2.6rem); }
    la web, independiente del color real de cada app (ver mini-UI abajo). */
 .pomodoro-card { --card-accent: #E2735A; }
 .habitos-card  { --card-accent: #8FBF4F; }
-.lightsout-card{ --card-accent: #F5C518; }
+.lightsout-card{ --card-accent: #F2C94C; }
 
 /* Fondo real de pantalla de cada app detrás de su mini-preview,
    para que el mockup no "mienta" sobre el fondo real de la app. */
@@ -357,12 +357,60 @@ footer { padding: 56px 0 40px; }
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
 .reveal.in { opacity: 1; transform: translateY(0); }
 
+/* ---------- custom dev / contacto (index.html) ---------- */
+.custom-dev .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+.custom-list { display: flex; flex-direction: column; gap: 18px; margin-top: 26px; }
+.custom-list-item { display: flex; gap: 14px; align-items: flex-start; }
+.custom-list-item .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--brand); margin-top: 8px; flex-shrink: 0; }
+.custom-list-item p { color: var(--text-muted); font-size: 0.95rem; }
+.custom-list-item strong { color: var(--text); }
+
+#contacto .wrap { text-align: center; max-width: 640px; }
+#contacto .contact-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 30px; }
+#contacto p.lede { margin-left: auto; margin-right: auto; }
+
+/* ---------- catálogo por categoría (apps.html) ---------- */
+.category-block { margin-bottom: 72px; }
+.category-block:last-child { margin-bottom: 0; }
+.category-label {
+  display: flex; align-items: baseline; gap: 14px;
+  font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--text-muted); padding-bottom: 16px; margin-bottom: 30px; border-bottom: 1px solid var(--line);
+}
+.category-label .count { color: var(--text-faint); font-size: 0.78rem; }
+
+/* ---------- lista de descarga (descargar.html) ---------- */
+.dl-header { padding: 64px 0 40px; text-align: center; }
+.dl-header .wordmark { justify-content: center; display: flex; margin-bottom: 22px; }
+.dl-header p { color: var(--text-muted); max-width: 420px; margin: 14px auto 0; }
+.dl-list { display: flex; flex-direction: column; gap: 14px; }
+.dl-row {
+  display: flex; align-items: center; gap: 18px;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 18px 20px;
+}
+.dl-icon {
+  width: 56px; height: 56px; border-radius: 15px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem; background: var(--surface-2); color: var(--row-accent, var(--accent));
+  border: 1px solid var(--line);
+}
+.dl-info { flex-grow: 1; min-width: 0; }
+.dl-info h3 { font-size: 1rem; }
+.dl-info p { color: var(--text-muted); font-size: 0.84rem; margin-top: 3px; }
+.dl-row .btn { flex-shrink: 0; padding: 11px 20px; font-size: 0.86rem; }
+.dl-row.pomodoro   { --row-accent: #E2735A; }
+.dl-row.habitos    { --row-accent: #8FBF4F; }
+.dl-row.lightsout  { --row-accent: #F2C94C; }
+
 /* ---------- responsive ---------- */
 @media (max-width: 860px) {
-  .hero-grid, .app-hero .wrap, .about-strip .wrap { grid-template-columns: 1fr; }
+  .hero-grid, .app-hero .wrap, .about-strip .wrap, .custom-dev .wrap { grid-template-columns: 1fr; }
   .app-hero-phone, .hero .ring-wrap { order: -1; }
   .apps-grid { grid-template-columns: 1fr; }
   .features-grid { grid-template-columns: 1fr; }
   .nav-links { display: none; }
   .stat-row { gap: 28px; }
+  .dl-row { flex-wrap: wrap; }
+  .dl-row .btn { width: 100%; justify-content: center; }
 }
