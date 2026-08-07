@@ -228,12 +228,14 @@ h2 { font-size: clamp(1.8rem, 3.2vw, 2.6rem); }
 .pomodoro-card { --card-accent: #E2735A; }
 .habitos-card  { --card-accent: #8FBF4F; }
 .lightsout-card{ --card-accent: #F2C94C; }
+.autotrack-card{ --card-accent: #1565C0; }
 
 /* Fondo real de pantalla de cada app detrás de su mini-preview,
    para que el mockup no "mienta" sobre el fondo real de la app. */
 .pomodoro-card .mini-preview,
 .habitos-card .mini-preview { background: #09090B; }
 .lightsout-card .mini-preview { background: #0D1117; }
+.autotrack-card .mini-preview { background: #F5F6FA; }
 
 /* ---------- phone mockup ---------- */
 .phone {
@@ -265,6 +267,7 @@ h2 { font-size: clamp(1.8rem, 3.2vw, 2.6rem); }
 .phone-pomodoro .phone-screen,
 .phone-habitos .phone-screen { background: #09090B; }
 .phone-lightsout .phone-screen { background: #0D1117; }
+.phone-autotrack .phone-screen { background: #F5F6FA; }
 
 /* ============================================================
    MINI-UI DE CADA APP DENTRO DEL MOCKUP — FIDELIDAD VISUAL
@@ -280,6 +283,8 @@ h2 { font-size: clamp(1.8rem, 3.2vw, 2.6rem); }
    - Lights Out: apps/lightsout/lib/main.dart (fondo #0D1117) y
      apps/lightsout/lib/widgets/cell_widget.dart (celda encendida
      #F5C518, celda apagada #1E1E2E).
+   - AutoTrack: apps/autotrack/lib/app.dart (única app con tema
+     claro: fondo #F5F6FA, seed color azul #1565C0).
    ============================================================ */
 
 /* pomodoro mini UI — real: acento teal #00F5D4, fondo #09090B */
@@ -311,6 +316,16 @@ h2 { font-size: clamp(1.8rem, 3.2vw, 2.6rem); }
 .ui-lightsout { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; width: 74%; }
 .ui-lightsout div { aspect-ratio: 1; border-radius: 5px; background: #1E1E2E; }
 .ui-lightsout div.on { background: #F5C518; box-shadow: 0 0 14px rgba(245,197,24,0.5); }
+
+/* autotrack mini UI — real: tema claro fondo #F5F6FA, azul #1565C0
+   (apps/autotrack/lib/app.dart) */
+.ui-autotrack { width: 82%; display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; }
+.ui-autotrack-icon {
+  width: 46px; height: 46px; border-radius: 14px; background: #1565C0; color: #fff;
+  display: flex; align-items: center; justify-content: center; font-size: 1.3rem;
+}
+.ui-autotrack strong { font-family: var(--font-mono); font-size: 1rem; color: #1A1D29; }
+.ui-autotrack span { font-size: 0.66rem; color: #5B6472; margin-top: 3px; display: block; }
 
 /* ---------- app detail hero ---------- */
 .app-hero .wrap { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 56px; align-items: center; }
@@ -402,6 +417,7 @@ footer { padding: 56px 0 40px; }
 .dl-row.pomodoro   { --row-accent: #E2735A; }
 .dl-row.habitos    { --row-accent: #8FBF4F; }
 .dl-row.lightsout  { --row-accent: #F2C94C; }
+.dl-row.autotrack  { --row-accent: #1565C0; }
 
 /* ---------- responsive ---------- */
 @media (max-width: 860px) {
